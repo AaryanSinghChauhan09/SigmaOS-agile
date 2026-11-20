@@ -1,65 +1,50 @@
-# SigmaOS-agile Component Wiki
+# SigmaOS-SigmaOS-agile Component Wiki
 
 ## Overview
-SigmaOS-agile provides agile methodology and project management support for the SigmaOS operating system. It demonstrates the project management subsystem and agile workflows within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic agile initialization.
+SigmaOS-SigmaOS-agile provides GitHub description is a placeholder; component scope remains unclassified. for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Agile Abstraction
-- Fail-Fast on Agile Initialization Errors
-- Deterministic Agile Setup
-- Clear Abstraction Over Agile APIs
-- Composition over Inheritance for agile extensions
+- SigmaOS-agile Abstraction
+- Fail-Fast on SigmaOS-agile Initialization Errors
+- Deterministic SigmaOS-agile Setup
+- Clear Abstraction Over SigmaOS-agile APIs
+- Composition over Inheritance for SigmaOS-agile extensions
 
 ## Architecture
-SigmaOS-agile follows an agile pattern:
-- **Agile Core**: Provides sprint management, task tracking, and workflow orchestration
-- **Project Management**: Supports scrum boards, kanban charts, and sprint planning
-- **Workflow Automation**: Supports automated workflows, task transitions, and progress tracking
-- **Error Handling**: Fail-fast on invalid agile configurations or unsupported project types
+SigmaOS-SigmaOS-agile follows a SigmaOS-agile pattern:
+- **SigmaOS-agile Core**: Provides SigmaOS-agile support, SigmaOS-agile management, and SigmaOS-agile tracking
+- **Management**: Supports SigmaOS-agile management, SigmaOS-agile configuration, and SigmaOS-agile lifecycle
+- **Tracking**: Supports SigmaOS-agile status, SigmaOS-agile tracking, and SigmaOS-agile lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-agile configurations or unsupported SigmaOS-agile types
 
 ## API
 The component provides the following public APIs:
-- `agile::sprint::create(goal, duration)` - Create a new sprint with given goal and duration
-- `agile::task::add(task, sprint)` - Add a task to a sprint
-- `agile::status::progress()` - Get current agile progress and sprint status
-- `agile::workflow::transition(task, transition)` - Execute a workflow transition
-- Error types for agile failure scenarios or unsupported project types
+-  - Manage a SigmaOS-agile by given configuration
+-  - Register a SigmaOS-agile by given name
+-  - Get SigmaOS-agile status and SigmaOS-agile availability
+-  - Track SigmaOS-agile management and SigmaOS-agile tracking
+- Error types for SigmaOS-agile failure scenarios or unsupported SigmaOS-agile types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific agile configuration
-2. **Act**: Execute the code under test (sprint creation, task addition)
-3. **Assert**: Verify the expected agile results
+1. **Arrange**: Set up test environment with specific SigmaOS-agile configuration
+2. **Act**: Execute the code under test (SigmaOS-agile init, SigmaOS-agile management)
+3. **Assert**: Verify the expected SigmaOS-agile results
 
 Example:
-```rust
-#[test]
-fn test_agile_sprint_aaa() {
-    // Arrange
-    let goal = "Implement login feature";
-    let duration = "2 weeks";
-    
-    // Act
-    let result = agile::sprint::create(goal, duration);
-    
-    // Assert
-    assert!(result.is_ok());
-    let sprint = result.unwrap();
-    assert!(sprint.is_active());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Agile initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all agile failure scenarios
-- Unit tests provided for sprint management and task tracking
-- Integration tests for full agile system with actual project management
+- Follows Rust best practices with 
+- SigmaOS-agile initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-agile failure scenarios
+- Unit tests provided for SigmaOS-agile management and configuration
+- Integration tests for full SigmaOS-agile system with actual SigmaOS-agile integration
 
 ## TODO
-- Add support for additional agile frameworks (Kanban, Scrum, XP)
-- Expand task management capabilities (tags, labels, dependencies)
-- Add workflow automation features (auto-transitions, triggers, conditions)
-- Create integration tests with actual project management systems
-- Implement sprint persistence and progress tracking features
+- Add support for additional SigmaOS-agile types
+- Expand SigmaOS-agile capabilities (SigmaOS-agile features, SigmaOS-agile configurations, SigmaOS-agile tracking)
+- Add lifecycle features (SigmaOS-agile tracking, SigmaOS-agile lifecycle, SigmaOS-agile propagation)
+- Create integration tests with actual SigmaOS-agile systems and SigmaOS-agile integration
+- Implement SigmaOS-agile persistence and SigmaOS-agile state management
